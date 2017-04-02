@@ -11,9 +11,7 @@ import android.widget.Toast;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
-/**
- * Created by Srinivas on 3/6/2017.
- */
+
 
 public class OurBroadcastReceiver extends BroadcastReceiver{
 
