@@ -1,4 +1,4 @@
-package com.example.srinivas.alarm_notifi;
+package com.example.nobodyme.alarm_notifi;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -21,12 +21,11 @@ public class OurBroadcastReceiver extends BroadcastReceiver{
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(2000);
 
-        Intent emoty = new Intent();
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context,2342423,emoty, PendingIntent.FLAG_UPDATE_CURRENT);
+
         Notification noti=new Notification.Builder(context)
                 .setContentTitle("New Message")
-                .setContentText("hello").setSmallIcon(R.mipmap.ic_launcher)
-                .setContentIntent(pendingIntent).build();
+                .setContentText("hello here's the notification").setSmallIcon(R.mipmap.ic_launcher).build();
+
         NotificationManager manager = (NotificationManager)context.getSystemService(NOTIFICATION_SERVICE);
         noti.flags |= Notification.FLAG_AUTO_CANCEL;
         manager.notify(0, noti);

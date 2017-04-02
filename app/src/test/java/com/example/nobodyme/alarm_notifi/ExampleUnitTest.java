@@ -1,4 +1,4 @@
-package com.example.srinivas.alarm_notifi;
+package com.example.nobodyme.alarm_notifi;
 
 import org.junit.Test;
 
